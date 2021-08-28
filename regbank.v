@@ -1,7 +1,7 @@
-module #(parameter ADDR_WIDTH = 6,
+module regbank  #(parameter ADDR_WIDTH = 6,
                     parameter DATA_WIDTH = 32,
                     parameter DEPTH = (2*32)-1)
-	  regbank  (RE_A, RE_B, RE_X, WD, MEM_WD, SRA, SRB, DR, W_INST, R_INST, CLK);
+	   (RE_A, RE_B, RE_X, WD, MEM_WD, SRA, SRB, DR, W_INST, R_INST, CLK);
     
 	 input CLK;
 	input [ADDR_WIDTH-1:0] SRA, SRB,W_INST,R_INST, DR;   //source and destination reg
